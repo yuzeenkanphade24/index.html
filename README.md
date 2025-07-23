@@ -1,0 +1,142 @@
+# Create a modern HTML version of the portfolio with styling and better layout
+
+modern_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yuzeen Kanphade Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #002B5B;
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .header {
+      background-color: #002B5B;
+      color: white;
+      padding: 20px;
+    }
+    .header h1 {
+      margin: 0;
+    }
+    .contact a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .section {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <h1>Yuzeen Kanphade</h1>
+    <p>Project Manager | Healthcare & Engineering</p>
+    <p>Email: <a href="mailto:yuzeenkanphade24@gmail.com" style="color:#aad4ff;">yuzeenkanphade24@gmail.com</a> | Nagpur, India</p>
+    <p><a href="https://www.linkedin.com/in/yuzeen-kanphade-84739a" target="_blank" style="color:#aad4ff;">LinkedIn Profile</a></p>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Professional Summary</h2>
+    <p>Certified PMP with a proven record of delivering high-impact healthcare and engineering projects. Skilled in Agile, Waterfall, and Lean methodologies with a strong foundation in stakeholder management, planning, and regulatory compliance.</p>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Project Lifecycle Management</li>
+      <li>Strategic Planning & Execution</li>
+      <li>Cross-Functional Collaboration</li>
+      <li>Medical Equipment Installation Oversight</li>
+      <li>Tools: JIRA, Trello, MS Project, Excel, Asana</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <p><strong>Project Manager – Kryptonite Solutions</strong> (Oct 2024–Present)</p>
+    <ul>
+      <li>Led cross-functional teams; reduced project cycle time by 15%</li>
+      <li>Managed delivery across engineering and QA departments</li>
+    </ul>
+
+    <p><strong>Operations Head – Medex Technology</strong> (Jan 2024–Oct 2024)</p>
+    <ul>
+      <li>Oversaw 25+ national device installations</li>
+      <li>Improved operational efficiency by 18%</li>
+    </ul>
+
+    <p><strong>Installation Manager – MECHTRADE</strong> (Dec 2019–Jan 2024)</p>
+    <ul>
+      <li>Installed 40+ radiotherapy systems (Varian, Siemens)</li>
+      <li>Managed QA, calibration, and logistics operations</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <ul>
+      <li>MBA in Operations Management – Nagarjuna Institute of Technology (2024)</li>
+      <li>B.Com – Saraswati Vidyalaya (2022)</li>
+      <li>Diploma in Electrical Engineering – ITI Nagpur (2019)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>PMP – NPTEL IIT Kharagpur (2023-2024)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Languages</h2>
+    <ul>
+      <li>English (C1)</li>
+      <li>Hindi (C2)</li>
+      <li>Marathi (C2)</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
+"""
+
+# Write the modern HTML to a file
+modern_file_path = Path("/mnt/data/index.html")
+modern_file_path.write_text(modern_html)
+
+modern_file_path.name  # Return the file name for download
